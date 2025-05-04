@@ -15,6 +15,26 @@ const perguntas = [
     pergunta: "Quem é o maior artilheiro da história do Palmeiras?",
     opcoes: ["Dudu", "Evair", "Heitor", "Marcos"],
     resposta: "Heitor"
+  },
+  {
+    pergunta: "Em qual estádio o Palmeiras manda seus jogos?",
+    opcoes: ["Maracanã", "Allianz Parque", "Morumbi", "Pacaembu"],
+    resposta: "Allianz Parque"
+  },
+  {
+    pergunta: "Quem foi o técnico do Palmeiras que conquistou a Libertadores de 2020?",
+    opcoes: ["Cuca", "Felipão", "Abel Ferreira", "Luxemburgo"],
+    resposta: "Abel Ferreira"
+  },
+  {
+    pergunta: "Qual é a cor tradicional do Palmeiras?",
+    opcoes: ["Verde e Branco", "Preto e Branco", "Azul e Branco", "Verde e Preto"],
+    resposta: "Verde e Branco"
+  },
+  {
+    pergunta: "Quantos títulos nacionais o Palmeiras tem?",
+    opcoes: ["6", "10", "9", "12"],
+    resposta: "10"
   }
 ];
 
@@ -29,7 +49,6 @@ function carregarPergunta() {
   pergunta.opcoes.forEach(opcao => {
     const btn = document.createElement("button");
     btn.textContent = opcao;
-    btn.className = "btn";
     btn.onclick = () => verificarResposta(opcao);
     opcoesDiv.appendChild(btn);
   });
