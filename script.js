@@ -1,4 +1,12 @@
-// Função que mostra mais informações quando o botão é clicado
+// Função que mostra mais informações ao clicar no botão
 function showMoreInfo() {
-    alert("O Palmeiras é um dos maiores times de futebol do Brasil e tem uma grande história, incluindo múltiplos títulos nacionais e internacionais.");
+    alert("O Palmeiras é um dos maiores times do futebol brasileiro, com uma história riquíssima de títulos e vitórias. Fundado em 1914, o clube já conquistou múltiplos campeonatos nacionais e internacionais!");
 }
+
+// Função para abrir o menu em telas pequenas (mobile)
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
