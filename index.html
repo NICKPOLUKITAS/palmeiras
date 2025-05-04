@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fúria Alviverde</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
@@ -18,13 +18,51 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="#historia">Sobre o Grupo</a></li>
+      <li><a href="#historia">História do Grupo</a></li>
+      <li><a href="#sobre">Sobre o Grupo</a></li>
+      <li><a href="#elenco">Nosso Elenco</a></li>
       <li><a href="#quiz">Quiz do Verdão</a></li>
-      <li><a href="#membros">Nosso Elenco</a></li>
-      <li><a href="#linha-tempo">História do Clube</a></li>
+      <li><a href="#area-secreta">Área Secreta</a></li>
     </ul>
   </nav>
 
+  <!-- Seção História do Grupo -->
+  <section id="historia" class="section">
+    <h2>História do Grupo</h2>
+    <p>Fundado em 2019, o grupo "Fúria Alviverde" nasceu com o intuito de reunir palmeirenses para debater, compartilhar memes e acompanhar as partidas do Palmeiras juntos.</p>
+    <img src="https://example.com/palmeiras.jpg" alt="Imagem do Palmeiras" class="image">
+  </section>
+
+  <!-- Seção Sobre o Grupo -->
+  <section id="sobre" class="section">
+    <h2>Sobre o Grupo</h2>
+    <p>O grupo Fúria Alviverde é um espaço para torcedores apaixonados do Palmeiras. Criamos momentos de diversão e companheirismo entre os membros.</p>
+  </section>
+
+  <!-- Seção Nosso Elenco -->
+  <section id="elenco" class="section">
+    <h2>Nosso Elenco</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Pedro</h3>
+        <p>Fundador e líder espiritual do grupo. Mestre das resenhas e memes!</p>
+      </div>
+      <div class="card">
+        <h3>Lucas</h3>
+        <p>Mestre das zoeiras e das análises das partidas. Sempre com uma opinião polêmica!</p>
+      </div>
+      <div class="card">
+        <h3>Bruna</h3>
+        <p>A analista tática do grupo. Sempre com uma visão crítica sobre o jogo!</p>
+      </div>
+      <div class="card">
+        <h3>João</h3>
+        <p>O sumido clássico. Só aparece nos momentos mais importantes e épicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Quiz do Verdão -->
   <section id="quiz" class="section">
     <h2>Quiz do Verdão</h2>
     <div class="quiz-container">
@@ -35,8 +73,37 @@
     </div>
   </section>
 
+  <!-- Seção Área Secreta -->
+  <section id="area-secreta" class="section">
+    <h2>Área Secreta</h2>
+    <p>Digite a senha para acessar a área secreta:</p>
+    <input type="password" id="senha">
+    <button onclick="verificarSenha()">Entrar</button>
+    <div id="conteudo-secreto" style="display: none;">
+      <p>Bem-vindo à Área Secreta! Aqui, temos informações exclusivas do grupo Fúria Alviverde.</p>
+    </div>
+  </section>
+
+  <!-- Seção Hino do Palmeiras -->
+  <section id="hino-palmeiras">
+    <h2>Hino do Palmeiras</h2>
+    <div id="letra-hino">
+      <pre>
+        "O Palmeiras é campeão, campeão,
+        Campeão do mundo, campeão do Brasil!"
+      </pre>
+    </div>
+    <iframe width="300" height="180" src="https://www.youtube.com/embed/34BG_0l2POI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Fúria Alviverde. Desenvolvido por palmeirenses para palmeirenses.</p>
+    <p>&copy; 2025 Fúria Alviverde</p>
+    <p>Instagram: 
+      <a href="https://www.instagram.com/sep_tatisx" target="_blank">@sep_tatisx</a> 
+      e 
+      <a href="https://www.instagram.com/paulovsk" target="_blank">@paulovsk</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
