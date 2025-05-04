@@ -63,13 +63,13 @@
   </section>
 
   <!-- Seção Quiz do Verdão -->
-  <section id="quiz" class="section">
+  <section id="quiz" class="section quiz-container">
     <h2>Quiz do Verdão</h2>
-    <div class="quiz-container">
+    <div class="quiz-content">
       <p id="quiz-pergunta">Carregando pergunta...</p>
-      <div id="quiz-opcoes"></div>
+      <div id="quiz-opcoes" class="quiz-opcoes"></div>
       <p id="quiz-resultado"></p>
-      <button onclick="proximaPergunta()" class="btn">Próxima</button>
+      <button onclick="proximaPergunta()" class="btn">Próxima Pergunta</button>
     </div>
   </section>
 
@@ -85,7 +85,7 @@
   </section>
 
   <!-- Seção Hino do Palmeiras -->
-  <section id="hino-palmeiras">
+  <section id="hino-palmeiras" class="section">
     <h2>Hino do Palmeiras</h2>
     <div id="letra-hino">
       <pre>
@@ -93,7 +93,9 @@
         Campeão do mundo, campeão do Brasil!"
       </pre>
     </div>
-    <iframe width="300" height="180" src="https://www.youtube.com/embed/34BG_0l2POI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-hino">
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/34BG_0l2POI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </section>
 
   <!-- Rodapé -->
