@@ -8,7 +8,11 @@ body {
   color: #333;
 }
 
-/* Cabeçalho */
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: #004d26;
+}
+
 header.hero {
   background-image: url('https://www.palmeiras.com.br/wp-content/uploads/2021/01/abel_ferreira.jpg');
   background-size: cover;
@@ -84,62 +88,6 @@ header .btn:hover {
   color: #a8d08d;
 }
 
-/* Quiz */
-.quiz-container {
-  text-align: center;
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.quiz-container p {
-  font-size: 1.5rem;
-}
-
-.quiz-container button {
-  background-color: #004d26;
-  color: white;
-  padding: 12px 25px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.quiz-container button:hover {
-  background-color: #007f2f;
-}
-
-#quiz-opcoes {
-  margin-top: 20px;
-}
-
-#quiz-opcoes button {
-  background-color: #28a745;
-  color: white;
-  padding: 12px 25px;
-  margin: 10px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#quiz-opcoes button:hover {
-  background-color: #218838;
-}
-
-#quiz-resultado {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 /* Seções */
 .section {
   padding: 40px 20px;
@@ -147,9 +95,25 @@ header .btn:hover {
   margin: auto;
 }
 
-footer {
-  background-color: #004d26;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.image {
+  max-width: 100%;
+  border-radius: 10px;
 }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card {
+  background: #e6f4ea;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#hino-palmeiras {
+  background-color: #004d
