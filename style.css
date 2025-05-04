@@ -7,6 +7,16 @@ body {
   background-color: #f0f4f8;
   color: #333;
 }
+/* Fundo personalizado para as seções finais */
+.bg-palmeiras {
+  background-image: url("/mnt/data/926c59e9-7544-4cba-b9fb-19178dd8f9a9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 60px 20px;
+  backdrop-filter: brightness(0.85);
+}
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
