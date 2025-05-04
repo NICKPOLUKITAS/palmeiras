@@ -2,15 +2,16 @@
 
 /* Ajustes gerais */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Futura', sans-serif;
   margin: 0;
   background-color: #f0f4f8;
   color: #333;
 }
 
 h1, h2, h3 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Playfair Display', serif;
   color: #004d26;
+  font-weight: bold;
 }
 
 header.hero {
@@ -36,12 +37,11 @@ header .overlay {
 }
 
 header h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 1rem 0;
 }
 
@@ -49,7 +49,7 @@ header .btn {
   background-color: #004d26;
   color: white;
   padding: 0.8rem 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -116,4 +116,88 @@ header .btn:hover {
 }
 
 #hino-palmeiras {
-  background-color: #004d
+  background-color: #004d26;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #004d26;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Área Secreta */
+#area-secreta {
+  background-color: #a8d08d;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Quiz */
+.quiz-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-content p {
+  font-size: 1.5rem;
+  color: #004d26;
+}
+
+.quiz-opcoes button {
+  background-color: #004d26;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-opcoes button:hover {
+  background-color: #007f2f;
+}
+
+.quiz-container button {
+  background-color: #004d26;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-container button:hover {
+  background-color: #007f2f;
+}
+
+.video-hino {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #a8d08d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adicionando fontes Playfair Display e Futura */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap');
