@@ -13,7 +13,7 @@ header.hero {
   background-image: url('https://www.palmeiras.com.br/wp-content/uploads/2021/01/abel_ferreira.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh; /* Ajuste de altura */
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +21,10 @@ header.hero {
   position: relative;
   color: white;
   padding: 20px;
-  overflow: hidden;
 }
 
 header .overlay {
-  background: rgba(0, 0, 0, 0.6); /* Escurecer o fundo para melhorar o contraste */
+  background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 12px;
   max-width: 90%;
@@ -82,7 +81,63 @@ header .btn:hover {
 }
 
 .navbar a:hover {
-  color: #a8d08d; /* Cor ao passar o mouse */
+  color: #a8d08d;
+}
+
+/* Quiz */
+.quiz-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container p {
+  font-size: 1.5rem;
+}
+
+.quiz-container button {
+  background-color: #004d26;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz-container button:hover {
+  background-color: #007f2f;
+}
+
+#quiz-opcoes {
+  margin-top: 20px;
+}
+
+#quiz-opcoes button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#quiz-opcoes button:hover {
+  background-color: #218838;
+}
+
+#quiz-resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Seções */
@@ -90,30 +145,6 @@ header .btn:hover {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
-}
-
-/* Ajuste de containers */
-.historia-boxes, .cards {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.box, .card {
-  background: #e6f4ea;
-  padding: 20px;
-  border-radius: 10px;
-  width: 30%;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 footer {
