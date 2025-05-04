@@ -1,5 +1,6 @@
 /* style.css */
 
+/* Ajustes gerais */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -7,25 +8,56 @@ body {
   color: #333;
 }
 
+/* Cabeçalho */
 header.hero {
   background-image: url('https://www.palmeiras.com.br/wp-content/uploads/2021/01/abel_ferreira.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 60vh; /* Ajuste de altura */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
 }
 
 header .overlay {
-  background: rgba(0, 100, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6); /* Escurecer o fundo para melhorar o contraste */
   padding: 2rem;
   border-radius: 12px;
-  color: white;
+  max-width: 90%;
+  margin: auto;
 }
 
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+header .btn {
+  background-color: #004d26;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .btn:hover {
+  background-color: #007f2f;
+}
+
+/* Navegação */
 .navbar {
   background-color: #004d26;
   padding: 10px 0;
@@ -49,21 +81,26 @@ header .overlay {
   font-weight: bold;
 }
 
+.navbar a:hover {
+  color: #a8d08d; /* Cor ao passar o mouse */
+}
+
+/* Seções */
 .section {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
-.historia-boxes {
+/* Ajuste de containers */
+.historia-boxes, .cards {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.box {
+.box, .card {
   background: #e6f4ea;
   padding: 20px;
   border-radius: 10px;
@@ -72,37 +109,11 @@ header .overlay {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.quiz-container {
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
 .card {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 200px;
-  text-align: center;
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.timeline-item {
-  background: #d4edda;
-  padding: 15px;
-  border-left: 5px solid #28a745;
-  border-radius: 5px;
 }
 
 footer {
