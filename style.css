@@ -1,79 +1,131 @@
-/* Reset básico */
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #006747;
+    background: #006747;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.navbar h1 {
-    margin: 0;
+.navbar .logo h1 {
+    font-size: 1.8em;
 }
 
-.navbar nav ul {
+.nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
-.navbar nav ul li {
-    margin: 0 20px;
+.nav-links li {
+    margin: 0 15px;
 }
 
-.navbar nav ul li a {
-    color: white;
+.nav-links a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff900;
 }
 
 /* Seções */
-section {
-    padding: 50px;
+.section {
+    padding: 80px 20px;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-section h2 {
-    font-size: 2em;
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2.5em;
     color: #006747;
     margin-bottom: 20px;
 }
 
-section p {
+p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    color: #555;
+    margin-bottom: 30px;
 }
 
-button {
+.cta-button {
     background-color: #006747;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;
+    font-size: 1.2em;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
-button:hover {
+.cta-button:hover {
     background-color: #004d36;
+}
+
+/* Listagem de jogadores */
+.jogadores-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2em;
+}
+
+.jogadores-list li {
+    font-weight: bold;
 }
 
 /* Rodapé */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 15px 0;
 }
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .navbar .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
